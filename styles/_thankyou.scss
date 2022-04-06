@@ -1,0 +1,21 @@
+
+.thankyou{
+    display: none;
+    @include card();
+    align-items: center;
+}
+
+.thankyou__selected{
+    color: $orange-color;
+    text-align: center;
+}
+
+.thankyou__title{
+    font-family: $title-font;
+    text-align: center;
+}
+
+.thankyou__para{
+    color: $medium-grey;
+    text-align: center;
+}

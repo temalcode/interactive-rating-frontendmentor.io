@@ -1,0 +1,41 @@
+
+$title-font: sans-serif;
+$body-text-font: sans-serif;
+
+$orange-color: hsl(25, 97%, 53%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$dark-blue-shade: hsl(214, 20%, 23%);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;    
+    height: 100vh;
+    font-size: $body-text-font;
+}
+
+@mixin card{
+    flex-direction: column;
+    background: linear-gradient(to bottom left, $dark-blue-shade , $dark-blue 50%);
+    height: 22rem;
+    width: 20rem;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: $body-text-font; 
+}
+
+
+@import '_rating';
+@import '_thankyou';

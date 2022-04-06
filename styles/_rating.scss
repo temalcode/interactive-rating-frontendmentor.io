@@ -1,0 +1,68 @@
+
+.rating-card{
+    display: flex;
+    @include card();
+}
+
+.star{
+    padding: 0.8rem 0.5rem;
+    width: 2.5rem;
+    background: $dark-blue-shade;
+    border-radius: 50%;
+    
+    &__img{
+        display: block;
+        margin: auto auto;
+    }
+}
+
+.label1{
+    color: green;
+}
+
+.rating__button__wrapper{
+    display: block;
+    width: fit-content;
+    margin: auto auto;
+    margin-top: 1rem;
+}
+
+.rating__button{
+    width: 2.5rem;
+    height: 2.5rem;
+    background: $dark-blue-shade;
+    border: none;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    color: $light-grey;
+    &:hover{
+        background: $medium-grey;
+        cursor: pointer;
+        color: $dark-blue;
+    }
+}
+
+.rating__submit{
+    width: 98%;
+    padding: 0.7rem 0;
+    border-radius: 1rem;
+    border: none;
+    background: $orange-color;
+    color: white;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    display: block;
+    margin: auto auto;
+
+    &:hover{
+        background: white;
+        color: $orange-color;
+        cursor: pointer;
+    }
+}
+
+
+.rating__button--clicked{
+    background: $orange-color;
+    color: white;
+}
